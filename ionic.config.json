@@ -1,0 +1,7 @@
+{
+  "name": "mobilImageProcessing",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

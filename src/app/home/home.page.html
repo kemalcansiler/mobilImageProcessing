@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Ionic Blank
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <img (click)="takePhoto()" id="image" [src]="myPhoto" alt=""/>
+        <ion-card-content>
+            <ion-item *ngFor="let item of predictions">
+                {{item.className}} ({{item.probability}})
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
