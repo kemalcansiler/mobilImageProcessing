@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar>
         <ion-title>
-            Ionic Blank
+            Anasayfa
         </ion-title>
     </ion-toolbar>
 </ion-header>
@@ -9,10 +9,12 @@
 <ion-content>
     <ion-card>
         <img (click)="takePhoto()" id="image" [src]="myPhoto" alt=""/>
+        <ion-header>Lütfen resmin üzerine tıklayarak resim yükleyiniz.</ion-header>
         <ion-card-content>
             <ion-item *ngFor="let item of predictions">
                 {{item.className}} ({{item.probability}})
             </ion-item>
+            <ion-button (click)="run()">Yenile</ion-button>
         </ion-card-content>
     </ion-card>
 </ion-content>
